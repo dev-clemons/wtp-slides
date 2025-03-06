@@ -37,7 +37,7 @@ Clemens Bachmannn
 ---
 
 # New Features
-
+ 
 During the last year we have been busy and added a lot of new features!
 
 Deployed Features
