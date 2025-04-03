@@ -4,7 +4,7 @@
       <slot />
     </div>
     <div class="iframe-container" :style="{ width: rightWidth }">
-      <iframe :src="url" style="width: 100%; height: 40%" allow="usb;clipboard-write"></iframe>
+      <iframe :src="url" :style="{position: 'absolute',width: rightWidth, height: '100%', padding:'20px'}" allow="usb;clipboard-write"></iframe>
     </div>
   </div>
 </template>
@@ -36,7 +36,4 @@ defineProps({
   padding: 20px; /* Add some padding for content */
 }
 
-.iframe-container {
-  padding: 20px; /* Add some padding for iframe */
-}
 </style>

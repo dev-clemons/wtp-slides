@@ -22,17 +22,102 @@ drawings:
 # use UnoCSS (experimental)
 css: unocss
 wakeLock: "build"
+# aspect ratio for the slides
+aspectRatio: 16/9
+# real width of the canvas, unit in px
+canvasWidth: 1260
 ---
 
-# WebTigerPython what's new?
+# WebTigerPython
 
-Clemens Bachmannn
+## Unleashing Python's Full Potential in the Browser
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+Clemens Bachmann
+
+---
+
+# A bit of History
+
+2012 TigerJython
+
+- Based on Jython (Python version written in Java)
+- Java Libraries can be used (Java Turtle, other educational libraries)
+- Works on any Plattform (Windows, Mac, Linux)
+- Easy installation
+- Robotics
+- Interactive Debugger
+
+|               |  |  |
+|-------------------|------|-----|
+|Jython <img src="./images/jython.png" alt="drawing" width="150"/>| Thetabot <img src="./images/thetabot.png" alt="drawing" width="150"/> | xgo <img src="./images/xgo.png" alt="drawing" width="150"/>|
+|Minibit <img src="./images/minibit.png" alt="drawing" width="150"/>|Marsrover <img src="./images/marsrover.png" alt="drawing" width="150"/>| MotionKit 2.0 <img src="./images/motionkit.png" alt="drawing" width="150"/>|
+
+---
+
+# TigerJython in 2020
+
+- Python 2.7
+- Does not work on iPads / Android Tablets
+- No support for popular libraries (numpy, scipy, matplotlib, pandas)
+
+---
+
+# The Case for Web Apps
+
+- Works really on all Plattforms (Windows, Mac, Linux, Android, iPad)
+- No installation needed
+- Bluetooth, WebUSB etc. can also be used in the Browser
+- WebAssembly makes it possible to execute all Code in the Browser
+
+---
+
+# Pillars
+
+- Robotics
+- Visual Computing
+- Data Visualisation
+
+---
+
+# Robotics
+## Approach 1 WebUSB
+
+---
+
+# Robotics Simulation
+
+---
+
+---
+
+# Robotics 
+## Approach 3 IoT
+
+---
+
+# Visual Computing
+
+## Asynchronity
+
+## Turtle
+
+## Pygame
+
+---
+
+# Debugger
+
+---
+
+# Future of WebTigerPython
+
+- 🐛 **Debugger** - Memory Visualisation
+- 📜 **Documentation** - Searchable, Integrated, Interactive
+- 🤖 **Robotics Update** - Minification, Calibration
+- 🤹 **Pygame** - Ground Work for GameGrid
+- 💻 **Robotics Simulation** - built-in recording and camera view
+- 🎵 **Jython Music** - export into PDF, PNGs, or even a hostable SPA
+- 🗃️ **Databases** - anything possible on a webpage
 
 ---
 
@@ -42,16 +127,7 @@ During the last year we have been busy and added a lot of new features!
 
 Deployed Features
 
-- 🐛 **Debugger** - Memory Visualisation
-- 📜 **Documentation** - Searchable, Integrated, Interactive
-- 🤖 **Robotics Update** - Minification, Calibration
-- 🤹 **Pygame** - Ground Work for GameGrid
 
-In Progress Projects
-
-- 💻 **Robotics Simulation** - built-in recording and camera view
-- 🎵 **Jython Music** - export into PDF, PNGs, or even a hostable SPA
-- 🗃️ **Databases** - anything possible on a webpage
 
 ---
 layout: center
