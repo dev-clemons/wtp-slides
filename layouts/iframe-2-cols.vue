@@ -4,7 +4,7 @@
       <slot />
     </div>
     <div class="iframe-container" :style="{ width: 'calc(100% - ' + leftWidth + ')' }">
-      <div style="position: absolute;transform: scale(0.75); transform-origin: 0 0; width: 133%; height: 133%;">
+      <div style="position: absolute;transform: scale(0.66); transform-origin: 0 0; width: 150%; height: 150%;">
         <iframe :src="url" :style="{position: 'absolute',width: 'calc(100% - ' + leftWidth + ')', height: '100%'}" allow="usb;clipboard-write"></iframe>
       </div>div>
     </div>
