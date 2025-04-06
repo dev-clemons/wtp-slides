@@ -27,26 +27,35 @@ css: unocss
 Clemens Bachmann
 
 ---
+layout: two-cols-header
+---
 
 # Who am I
 
-<img src="./images/clemi.jpeg" width="100"/>
-
-- Software Developer
-  - Departement of algorithms and **didactics**
-- Computer Science Teacher
+::left::
+- Name: Clemens Bachmann
+- Occupation: Software Developer / Educator
+  - Departement of algorithms and **didactics** at ETH
 - clemens.bachmann@inf.ethz.ch
-
+::right::
+<div>
+  <img src="./images/clemi.jpeg" width=150 class="absolute right-50px top-90px"/>
+</div>
 
 ---
+layout: two-cols-header
+---
 
-# TigerJython 2012 (A bit of History)
+# TigerJython 2012- (A bit of History)
 
-|               |  |  |
-|--------|------|-----|
-|<img src="./images/jython.png" width="100"/>|<img src="./images/jython_turtle.png"  width="100"/> | <img src="./images/maqueen.webp" width="100"/>|
-|Jython (Python in the JVM)| Educational Java Libraries <br> e.g. Turtle, GameGrid | Robotics
-
+::left::
+- Jython
+- Visual Computing
+  - Turtle, Games
+- Robotics
+  - micro:bit
+  - Mindstorms EV3
+  - etc.
 - Works on any Plattform (Windows, Mac, Linux)
 - Easy installation
 - Interactive Debugger
@@ -54,28 +63,46 @@ Clemens Bachmann
   - repeat loop
   - autocasting of inputs
 
+::right::
+<img src="./images/jython.png" alt="drawing" width="100"/>
+<br>
+<img src="./images/tigerjython.png" alt="drawing" width="350"/>
+
+---
+layout: two-cols-header
 ---
 
-# TigerJython in 2020
+# TigerJython now
 
-- Python 2.7
-- Does not work on any Platform (iPad / Android)
+::left::
+<v-clicks>
+- Jython is still at Python 2.7
+- Does not work on all Platforms (iPad / Android)
 - No support for popular Python libraries written in C (numpy, scipy, matplotlib, pandas)
+- Swing UI looks a bit dated
+</v-clicks>
+
+::right::
+<img src="./images/jython.png" alt="drawing" width="100"/>
+<br>
+<img src="./images/tigerjython.png" alt="drawing" width="350"/>
 
 ---
 
-# WebTigerPython - TigerJython for the Web
+# WebTigerPython - Bring TigerJython to the Web
 
 - Works really on all Plattforms (Windows, Mac, Linux, Android, iPad)
 - No installation needed
-- WebAPIs pathe the way for Robotics
-  - WebUSB
-  - WebBluetooth
+- WebAPIs pathe the way for Robotics in the Web
+  - WebBluetooth (2017)
+  - WebUSB (2021)
 - WebAssembly makes it possible to run python in the Browser (Pyodide)
 - Critical Requirements
   - Robotics
   - Visual Computing
   - Debugger
+
+> 🛠️ Features marked with this icon are not deployed yet
 ---
 
 # Robotics
@@ -93,11 +120,10 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
 
 - Single Devices have to be added for WebUSB
   - Auto-connect on plug if registered
-- On Linux this has to be "activated"
 - Only in Chrome
 - Safari / Firefox declined to implement the feature
   - Many schools work with iPads
-  - no real chrome
+  - No real chrome on iPads
 
 ---
 layout: iframe-2-cols
@@ -132,8 +158,8 @@ url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjA
   - We don't support this right now
 - No real Chrome on iPads 
   - Chrome on iPad is WebKit (Safari Engine) based
-- IoT 
-  - Code runs in Browser 🛠️
+- IoT 🛠️
+  - Code runs in Browser
 - Simulation works on anything 🛠️
 
 ---
@@ -156,9 +182,10 @@ layout: two-cols-header
 
 ::left::
 
-- Python (Pyodide runs in a Webworker)
-  - UI does not freeze (single Threaded)
-- Graphic Rendering can be done with callbacks
+- Python (Pyodide) runs in a Webworker
+  - UI does not freeze (single threaded)
+- Graphic rendering is done with callbacks
+- Pausing execution is done with a SharedArrayBuffer
 
 ::right::
 
@@ -166,6 +193,10 @@ layout: two-cols-header
 graph TD
     A[Main Thread] <-->|Interacts with| B[DOM]
     A <-->|postMessage API| C[Web Worker]
+    A -->|Accesses| D[SharedArrayBuffer]
+    C -->|Accesses| D
+style A fill:#ffcc00, color:#000000
+style C fill:#ffcc00, color:#000000
 ```
 
 ---
@@ -189,6 +220,7 @@ layout: two-cols-header
 
 ::left::
 
+- Pygame-ce was ported to Pyodide with a canvas backend
 - Render Graphics off screen in Web Worker
   - offscreenCanvas
   - Introduced for better interactivity
@@ -199,8 +231,12 @@ layout: two-cols-header
 graph TD
     A[Main Thread] <-->|Interacts with| B[DOM]
     A <-->|postMessage API| C[Web Worker]
-    B -->|Contains| D[OffscreenCanvas]
+    A -->|Accesses| D[SharedArrayBuffer]
     C -->|Accesses| D
+    B -->|Contains| E[OffscreenCanvas]
+    C -->|Accesses| E
+style A fill:#ffcc00, color:#000000
+style C fill:#ffcc00, color:#000000
 ```
 
 ---
@@ -219,6 +255,36 @@ layout: two-cols-header
 
 ::right::
 
+### Synchronous Execution
+
+```mermaid
+flowchart LR
+    A[Python Execution Pt. 1 & 2] --> C[Render 1]
+    C --> D[Render 2]
+
+    style A fill:#ffcc00, color:#000000
+    style C fill:#66ccff, color:#000000
+    style D fill:#66ccff, color:#000000
+```
+
+### Desired Execution Flow
+
+```mermaid
+flowchart LR
+    A[Python Execution Pt. 1] --> B[Render 1]
+    B --> C[Python Execution Pt. 2]
+    C --> D[Render 2]
+
+    style A fill:#ffcc00, color:#000000
+    style B fill:#66ccff, color:#000000
+    style C fill:#ffcc00, color:#000000
+    style D fill:#66ccff, color:#000000
+```
+
+---
+
+# Asynchronity Example
+
 ````md magic-move
 ```py
 from pygame import *
@@ -231,7 +297,43 @@ def updateActors():
     render()
 def main():
     while True:
-        ...
+        #...
+        updateActors()
+main()
+```
+```py
+from pygame import *
+import asyncio
+
+async def render():
+     #...
+    display.flip()
+    asyncio.sleep(0)
+
+def updateActors():
+    #...
+    render()
+def main():
+    while True:
+        #...
+        updateActors()
+main()
+```
+```py
+from pygame import *
+import asyncio
+
+async def render():
+     #...
+    display.flip()
+    asyncio.sleep(0)
+
+async def updateActors():
+    #...
+    await render()
+def main():
+    while True:
+        #...
         updateActors()
 main()
 ```
@@ -245,10 +347,10 @@ async def render():
     asyncio.sleep(0)
 async def updateActors():
     #...
-    render()
+    await render()
 async def main():
     while True:
-        ...
+        #...
         await updateActors()
 await main()
 ```
@@ -258,15 +360,16 @@ await main()
 
 ---
 layout: iframe-2-cols
-url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMNGbAewCcyACPAc1jgB0IeBiZgEkIaMmigAbNAC84zAAq4O8Hu06YMogBQBKHv2YBlOCwCu2ZmQAWc4mgDO2CVFw97AYwZw4EZgF5WJXU7R2dcTHsTAH0YOmI4LR5mZOYtAGYABgyCZkyMvQgCgXkwuAZWBjpsMrE4ex4vdxYAtXhMACU4Jq1s5l6AVgH8_QgBAFl0Xwk6Kp4Adys0CTkAFQZTOEQklPG6ADc5Jxcy7eSAazhce39A5ThMC_C2aOwve0jiXVPmNAAzZke9mArXuAGkogAZACiADEVgBdRDMb4pZiNMiYAAezAAtAF-t8_gDLkCQZhwe1BABxAASCKRKJS6KxzAA1PjCf9AcCgm1wQBVeSI5G-VFMroY3C4jmi5JE7lk8EAEQA8gB1ABywsZyWZUvZzAJsuYAiVDCgc2YcAODFw1gwbG-Hi8PkwvyWEi0PRyvXyBVRZOI5rmmHRiWNqOd3ggOS0ACZ-v0fT6dDl0f6UoGHEdwr8pNgvsayWI2gBhabuM66TBiStaABs-TAAF94UA
+url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMNGbAewCcyACPAc1jgB0IeBiZgEkIaMmigAbNAC84zAAq4O8Hu06YMogBQBKHv2YBlOCwCu2ZmQAWc4mgDO2CVFw97AYwZw4EZgF5WJXU7R2dcTHsTAH0YOmI4LR5mZOYtAGYABgyCZkyMvQgCgXkwuAZWBjpsMrE4ex4vdxYAtXhMACU4Jq1s5l6AVgH8_QgBAFl0Xwk6Kp4Adys0CTkAFQZTOEQklPG6ADc5Jxcy7eSAazhce39A5ThMC_C2aOwve0jiXVPmNAAzZke9mArXuAGkogAZACiADEVgBdRDMb4pZiNMiYAAezAAtAF-t8_gDLkCQZhwe1BABxAASCKRKJS6KxzAA1PjCf9AcCgm1wQBVeSI5G-VFMrqYXC4jmi5JE7lk8EAEQA8gB1ABywsZyWZUvZzAJsuYAiVDCgc2YcAODFw1gwbG-Hi8PkwvyWEi0PRyvXyBVRZOI5rmmHRiWNqOd3ggOS0ACZ-v0fT6dDl0f6UoGHEdwr8pNgvsayWI2gBhabuM66TBiStaABs-TAAF94UA
 ---
 
 # Asyncify Problem Solution
 
 - We Asyncify code for Students
 - Fix Line numbers in Errors
-- JavaScript Promise Integrations (JSPI) 
-  - Experimental Chrome only feature
+<!--
+[click] - JavaScript Promise Integrations (JSPI) 
+- Experimental Chrome only feature
 ```py
 import async
 from pyodide.ffi import run_sync
@@ -274,6 +377,15 @@ from pyodide.ffi import run_sync
 def sync_update(url):
   resp = run_sync(asyncio.sleep(0))
 ```
+-->
+
+---
+layout: iframe-2-cols
+leftWidth: 25%
+url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMNGbAewCcyACPAc1jgB0If3PMcAB6xsAGzgBnTFDFo4EaagwAKAJRgAvgF0gA
+---
+
+# Pygame Aliens
 
 ---
 layout: iframe-2-cols
@@ -322,12 +434,15 @@ Nested Lists
 
 # Conclusion
 
-- Many things are still browser dependent.
-- Except for iPads, all Features to Work
-- There is some hope
+- Most things do work in the browser
+- Except for iPads, all Features to Work on any device
+  - Not on any browser (Firefox/Safari)
+- Try it out at [wtp.ethz.ch](https://webtigerpython.ethz.ch)
+- Coding exercises [python-online.ch](https://python-online.ch)
 
 # Outlook
 
 - Educational Database library
 - Bluetooth Robotics
 - Multifile
+- Open Source
