@@ -37,6 +37,7 @@ layout: two-cols-header
 - Occupation: Software Developer / Educator
   - Departement of algorithms and **didactics** at ETH
 - clemens.bachmann@inf.ethz.ch
+
 ::right::
 <div>
   <img src="./images/clemi.jpeg" width=150 class="absolute right-50px top-90px"/>
@@ -49,6 +50,8 @@ layout: two-cols-header
 # TigerJython 2012- (A bit of History)
 
 ::left::
+<v-clicks>
+
 - Jython
 - Visual Computing
   - Turtle, Games
@@ -63,6 +66,8 @@ layout: two-cols-header
   - repeat loop
   - autocasting of inputs
 
+</v-clicks>
+
 ::right::
 <img src="./images/jython.png" alt="drawing" width="100"/>
 <br>
@@ -76,10 +81,12 @@ layout: two-cols-header
 
 ::left::
 <v-clicks>
+
 - Jython is still at Python 2.7
 - Does not work on all Platforms (iPad / Android)
 - No support for popular Python libraries written in C (numpy, scipy, matplotlib, pandas)
 - Swing UI looks a bit dated
+
 </v-clicks>
 
 ::right::
@@ -90,6 +97,8 @@ layout: two-cols-header
 ---
 
 # WebTigerPython - Bring TigerJython to the Web
+
+<v-clicks>
 
 - Works really on all Plattforms (Windows, Mac, Linux, Android, iPad)
 - No installation needed
@@ -102,14 +111,34 @@ layout: two-cols-header
   - Visual Computing
   - Debugger
 
+</v-clicks>
+
 > 🛠️ Features marked with this icon are not deployed yet
+
+---
+layout: two-cols-header
 ---
 
 # Robotics
 
+::left::
+
+<v-clicks>
+
 - WebUSB (micro:bit, calliope_mini)
 - Simulation 🛠️
 - IoT (oxocard) 🛠️
+
+</v-clicks>
+
+::right::
+<img src="./images/maqueen.webp" alt="drawing" width="200"/>
+
+[https://www.mouser.at/new/dfrobot/dfrobot-micro-maqueen-robot/](https://www.mouser.at/new/dfrobot/dfrobot-micro-maqueen-robot/)
+
+<img src="./images/ledring.jpg" alt="drawing" width="200"/>
+
+[https://whadda.com/product/rgb-led-ring-shield-for-microbit-wpse475/](https://whadda.com/product/rgb-led-ring-shield-for-microbit-wpse475/)
 
 ---
 layout: iframe-2-cols
@@ -118,6 +147,8 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
 
 # Robotics - WebUSB
 
+<v-clicks>
+
 - Single Devices have to be added for WebUSB
   - Auto-connect on plug if registered
 - Only in Chrome
@@ -125,23 +156,31 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
   - Many schools work with iPads
   - No real chrome on iPads
 
+</v-clicks>
+
 ---
 layout: iframe-2-cols
-url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAhjQGMGAjNMptGbPVq8AVEwA6EOoxacu9Xv0HCmIyZOnMYc-pwV8BQ0ZIDEm2fLIB9bABsArgGcDy4xEmO4ZAMrY4cYgAKAEYABlCASklaOD9yREkmJKYANwAlJgBePlo0tABzAAsyTBioYitiAp4oW0CoiGTUgBksnOa4ahKyiqr8mrqI5MTktGoWrOzQpigIYlSMzKmExqbk6iEAdyhaIKGJVaS4WzGJpaZgmbmFyaZQlbXk2gLi-seRo5PxlNbz6dn5ulbsEHo8mLZOmQ3gcmsRjlBcCFwhEwABfAC6QA&device=micro%3Abit
+url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAhjQGMGAjNMptGbPVq8AVEwA6EOoxacu9Xv0HCmIyZIDOcMgGVscOMQAUARgAMZgJSTacfeUSSmzpgDcASkwC8fWu7QA5gAWZJi2UMQA-sSBPFAANkbWEC5uADLevmlw1KHhUTEBcYmWLk4uaNTp3j5mTFAQxG6eXrWOKaku1EIA7lC0xqUSHc5w8ZXVrUwm9Y3NNUxm7Z0utIEhSSvlo-NVrhlTdQ1NHgsmyytM8Tlkm8OpxGNQuKYWlmAAvgC6QA&device=micro%3Abit
 ---
 
 # Robotics - Simulation 🛠️
+
+<v-clicks>
 
 - Works on any device
 - No robot needed
 - Not real robotics
 
+</v-clicks>
+
 ---
 layout: iframe-2-cols
-url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAnoA96BjKW4ptGbPVpkmAKiYAdCP0HCmqMtgA29MkrQAjHLmWqmUAM5NlZKVIBuUJQFc4RgLxNgAXSkQmjgMwAGMxGpCfHzutFAQAOZwABQQAJSIUkxJTJZKHkyRZACCMBpocBBkADLWrFGxicmptgaYUNjYBcRRqRXuyWT8cAD6ghhkDkzqBmRRoRHRaADUAIyxbcnGSmSY1Gjh1rTRa-EGaABecPZRM94ETACs85VJJjgqo53wvfT9BufVdueotADWcLR7AByehA87qCB2Mi4JRHIEAWjBTA49BUgKBGiBC2Sd06amiQIAIuQoFibksVqwlFANHAlFEgQBZOCGTZweCFAxk9q3ZaYGE0ukMgBCtHWAAsyJCDEYoiUObFuYs7uExc0ACq0WzY3krAzi-gAd3KUjAAF9nEA&device=Oxocard
+url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAnoA96BjKW4ptGbPVpkmAKiYAdCP0HCmqMtgA29MkrQAjHLmWqmUAM5NlZKVIBuUJQFc4RgLxNgAXSkQmjgMwAGMxGpCfHzutFAQAOZwABQQAJSIUkxJTJZKHkyRZACyaBwM2AAW9BBwACJwHJpwSlGxicmptgaYUNjYcBDEUal17slk_HAA-oIYZA5M6gZkUaER0WgA1ACMsb3JxkpkmNRo4da00bvhBmgAXnD2UcveBEwArGv1SSY4KjMD8CP0YwZ3jXY7qhaABrOC0ewAcnokLu6hK01wSkukIAtLCmBx6CoIZCNJD1slXgM1NFIaVyFACc9NttWEooBpqlFIVk4IYDnB4BBxtS-i8tpgkYzmZCAGrY6zwJhRYgaWJ8javcK0NBdAAqtFshIF2wMRQA7rUpGAAL7OIA&device=Oxocard
 ---
 
 # Robotics - IoT 🛠️
+
+<v-clicks>
 
 - Connection over IoT
 - Works on iPad
@@ -149,9 +188,14 @@ url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjA
   - Does not work without WebTigerPython
   - Not real robotics
   - Oxocard has no wheels
+
+</v-clicks>
+
 ---
 
 # Robotics Summary
+
+<v-clicks>
 
 - WebUSB (Chrome only)
 - WebBluetooth (Chrome only)
@@ -162,9 +206,13 @@ url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjA
   - Code runs in Browser
 - Simulation works on anything 🛠️
 
+</v-clicks>
+
 ---
 
 # Visual Computing
+
+<v-clicks>
 
 - Turtle
   - The opposite of a blackbox
@@ -174,6 +222,8 @@ url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjA
   - Advanced
   - Popular
 
+</v-clicks>
+
 ---
 layout: two-cols-header
 ---
@@ -182,10 +232,14 @@ layout: two-cols-header
 
 ::left::
 
+<v-clicks>
+
 - Python (Pyodide) runs in a Webworker
   - UI does not freeze (single threaded)
 - Graphic rendering is done with callbacks
 - Pausing execution is done with a SharedArrayBuffer
+
+</v-clicks>
 
 ::right::
 
@@ -206,11 +260,15 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
 
 # Turtle / Input Function
 
+<v-clicks>
+
 - Webworker is Paused
 - Interruptbuffer
 - SharedBufferArray
 - Whole Thread is halted
 - Callback functions, cannot access DOM
+
+</v-clicks>
 
 ---
 layout: two-cols-header
@@ -220,10 +278,14 @@ layout: two-cols-header
 
 ::left::
 
+<v-clicks>
+
 - Pygame-ce was ported to Pyodide with a canvas backend
 - Render Graphics off screen in Web Worker
   - offscreenCanvas
   - Introduced for better interactivity
+
+</v-clicks>
 
 ::right::
 
@@ -247,11 +309,15 @@ layout: two-cols-header
 
 ::left::
 
+<v-clicks>
+
 - Render Updates are done in the Webloop
 - It is not possible to synchronously give control to webloop
 - asyncio.sleep
   - only in asynchronous contexts
   - async Programming is not easy
+
+</v-clicks>
 
 ::right::
 
@@ -309,7 +375,6 @@ async def render():
      #...
     display.flip()
     asyncio.sleep(0)
-
 def updateActors():
     #...
     render()
@@ -327,7 +392,6 @@ async def render():
      #...
     display.flip()
     asyncio.sleep(0)
-
 async def updateActors():
     #...
     await render()
@@ -365,11 +429,13 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
 
 # Asyncify Problem Solution
 
+<v-clicks>
+
 - We Asyncify code for Students
 - Fix Line numbers in Errors
-<!--
-[click] - JavaScript Promise Integrations (JSPI) 
+- JavaScript Promise Integrations (JSPI) 
 - Experimental Chrome only feature
+
 ```py
 import async
 from pyodide.ffi import run_sync
@@ -377,7 +443,8 @@ from pyodide.ffi import run_sync
 def sync_update(url):
   resp = run_sync(asyncio.sleep(0))
 ```
--->
+
+</v-clicks>
 
 ---
 layout: iframe-2-cols
@@ -388,15 +455,35 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
 # Pygame Aliens
 
 ---
-layout: iframe-2-cols
-url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAjIFdayAbOJtGbehyYAqADoRx1NJ04Bjep0EAKUSigBzOBAqqAlOOxb5i2irWbtUPeIBGcdRgD6UmUv0RacQ-SYBWROJMQUzUxEoAjABsAAzuwUwcEQAsSe5axM7SnG5gAL4AukA
+layout: two-cols-header
 ---
 
 # Debugger
 
-- Toggled in Settings
+::left::
+
+<v-clicks>
+
+- Has to be actively turned on
 - Turtle Step by Step
 - Breakpoints can be toggled during execution
+- Inspired by TigerJython debugger / python-tutor.ch
+
+</v-clicks>
+
+::right::
+
+<img src="./images/pythontutor.png" alt="drawing" width="250"/>
+
+[https://pythontutor.com/](https://pythontutor.com/)
+
+
+---
+layout: iframe-2-cols
+url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAjIFdayAbOJtGbehyYAqADoRx1NJ04Bjep0EAKUSigBzOBAqqAlOOxb5i2irWbtUPeIBGcdRgD6UmUv0RacQ-SYBWROJMQUzUxEoAjABsAAzuwUwcEQAsSe5axM7SnG5gAL4AukA
+---
+
+# Debugger Turtle
 
 ---
 layout: iframe-2-cols
