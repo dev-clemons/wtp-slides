@@ -52,19 +52,15 @@ layout: two-cols-header
 ::left::
 <v-clicks>
 
+- Many educational libraries for Java
 - Jython
-- Visual Computing
+- Graphics Libraries
   - Turtle, Games
 - Robotics
-  - micro:bit
-  - Mindstorms EV3
-  - etc.
+  - micro:bit, Mindstorms EV3
 - Works on any Plattform (Windows, Mac, Linux)
 - Easy installation
 - Interactive Debugger
-- Extended Syntax e.g.
-  - repeat loop
-  - autocasting of inputs
 
 </v-clicks>
 
@@ -96,24 +92,28 @@ layout: two-cols-header
 
 ---
 
-# WebTigerPython - Bring TigerJython to the Web
+# Bring TigerJython to the Web
 
 <v-clicks>
 
-- Works really on all Plattforms (Windows, Mac, Linux, Android, iPad)
-- No installation needed
+- WebAssembly makes it possible to run python in the Browser (Pyodide)
+- Web apps really on all plattforms (Windows, Mac, Linux, Android, iPad)
+- No installation required
 - WebAPIs pathe the way for Robotics in the Web
   - WebBluetooth (2017)
   - WebUSB (2021)
-- WebAssembly makes it possible to run python in the Browser (Pyodide)
 - Critical Requirements
   - Robotics
-  - Visual Computing
+  - Graphics Libraries
   - Debugger
 
 </v-clicks>
 
+<v-click>
+
 > 🛠️ Features marked with this icon are not deployed yet
+
+</v-click>
 
 ---
 layout: two-cols-header
@@ -142,7 +142,7 @@ layout: two-cols-header
 
 ---
 layout: iframe-2-cols
-url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAhjQGMGAjNMptGbPVq8AVEwA6EOoxacu9Xv0HCmIyZOnMYc-pwV8BQ0ZIDEm2fLIB9bABsArgGcDy4xEmO4ZAMrY4cYgAKAGYABgBKSVo4P3JESSZEpgA3ACUmAF4-WlS0AHMACzJMaKhiK2J8nihbQMiIJJSAGUzsprhqYtLyyrzq2vCkhKS0ambMrNCmKAhiFPSMyfiGxqTqIQB3KFogwYkVxLhbUfHFpgBGadn5iaZQ5dWk2nyiusfhw-Ox5JazqZm5mlbucHo8mLYOmQ3vtGsQjlBcIFzqEImAAL4AXSAA&device=micro%3Abit
+url: https://webtigerpython.ethz.ch/microbit?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAhjQGMGAjNMptGbPVq8AVEwA6EOoxacANnGJ8BQ0ZMm042OOUSSmBptSF8-EJrSgQA5nAAUAJgAsASj3nDn6mjly7ABgJA_xd9T0MAZzgyAH0FYjs0AiZAlOSARn8QsPCmCIUtOwBWLNCPXJzwsABfAF0gA&device=micro%3Abit&breakpoints=1
 ---
 
 # Robotics - WebUSB
@@ -169,13 +169,12 @@ url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjA
 
 - Works on any device
 - No robot needed
-- Not real robotics
 
 </v-clicks>
 
 ---
 layout: iframe-2-cols
-url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAnoA96BjKW4ptGbPVpkmAKiYAdCP0HCmqMtgA29MkrQAjHLmWqmUAM5NlZKVIBuUJQFc4RgLxNgAXSkQmjgMwAGMxGpCfHzutFAQAOZwABQQAJSIUkxJTJZKHkyRZACyaBwM2AAW9BBwACJwHJpwSlGxicmptgaYUNjYcBDEUal17slk_HAA-oIYZA5M6gZkUaER0WgA1ACMsb3JxkpkmNRo4da00bvhBmgAXnD2UcveBEwArGv1SSY4KjMD8CP0YwZ3jXY7qhaABrOC0ewAcnokLu6hK01wSkukIAtLCmBx6CoIZCNJD1slXgM1NFIaVyFACc9NttWEooBpqlFIVk4IYDnB4BBxtS-i8tpgkYzmZCAGrY6zwJhRYgaWJ8javcK0NBdAAqtFshIF2wMRQA7rUpGAAL7OIA&device=Oxocard
+url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAnoA96BjKW4ptGbPVpkmAKiYAdCP0HCmqMtgA29MkrQAjHLmWqmUAM5NlZKVIBuUJQFc4RgLxNgAXSkQmjgIwAGb2YjUQnx87rRQEADmcAAUEACUiFJMyUyWSh5MUWQAsmgcDNgAFvQQcAAicByacErRcUkpabYGmFDY2HAQxNFp9e4pZPxwAPqCGGQOTOoGZNFhkTFoANSecX0pxkpkmNRoEda0MbsRBmgAXnD20T4ETACsaw3JJjgqs08bTIPwo_TjBrcPhsmnZAf1PvJuABrOC0ewAcno8LBEOS6lKM1wSku8IAtMjJODPhx6Co4fCNPD1ikXoM1DF4WVyFAqR8XqwlFANDVovDsnBDAc4PAIBNWUSXliuTz4QA1UnWeBMaLEDRxcUbF4RWhoboAFVotmpzy2mAMxQA7nUpGAAL7OIA&device=Oxocard
 ---
 
 # Robotics - IoT 🛠️
@@ -210,15 +209,14 @@ url: https://test.webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjA
 
 ---
 
-# Visual Computing
+# Graphics Libraries
 
 <v-clicks>
 
 - Turtle
   - The opposite of a blackbox
   - Intuitive commands (forward, left etc.)
-  - Beginner friendly
-- Game Frameworks
+- Pygame
   - Advanced
   - Popular
 
@@ -255,7 +253,7 @@ style C fill:#ffcc00, color:#000000
 
 ---
 layout: iframe-2-cols
-url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAjIFdayAbOJtGbehyYAqADoRxAY3qdBAClFgARp1ZxFASnHiAxEwCSEJgBU0Aczi0ACrjIALehAK8I2VmSYA3KKrgBnJihaHih3ekkoPzI4YnEjAF4XNzIFMABxNCUmYjQeAEEIAC8oO04mAFFJAGs4IygIRE1tCD0AOXoPYJ8mG3tHcWDsOHImBqZxJkmmakEAdyDiOQBWAAYVpgB6Ua0jKdpzOxSAZgA2da2IDTAAXwBdIA
+url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMAMwCcB7GAAjIFdayAbOJtGbehyYAqADoRxAY3qdBAClFgARp1ZxFASnHiITALy8I2VmQCSEMgrABlNMTgBnRJu0QAxEwBy9Mk1pwoTiYABVwyAAt6CQh_bADfCEQmcSZUpmpBAHcoWmI5AFYABkKmAHomCC1dNNo0AHNwywBmADYS8sqwAF8AXSA
 ---
 
 # Turtle / Input Function
@@ -263,9 +261,8 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
 <v-clicks>
 
 - Webworker is Paused
-- Interruptbuffer
 - SharedBufferArray
-- Whole Thread is halted
+- Whole thread is halted
 - Callback functions, cannot access DOM
 
 </v-clicks>
@@ -280,7 +277,7 @@ layout: two-cols-header
 
 <v-clicks>
 
-- Pygame-ce was ported to Pyodide with a canvas backend
+- pygame-ce was ported to Pyodide with a canvas backend
 - Render Graphics off screen in Web Worker
   - offscreenCanvas
   - Introduced for better interactivity
@@ -311,11 +308,11 @@ layout: two-cols-header
 
 <v-clicks>
 
-- Render Updates are done in the Webloop
+- async functions (render updates) are done in the webloop
 - It is not possible to synchronously give control to webloop
 - asyncio.sleep
   - only in asynchronous contexts
-  - async Programming is not easy
+  - async rogramming is not easy
 
 </v-clicks>
 
@@ -431,10 +428,14 @@ url: https://webtigerpython.ethz.ch/?code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAX
 
 <v-clicks>
 
-- We Asyncify code for Students
-- Fix Line numbers in Errors
+- We asyncify code for students
+- Fix line numbers in errors
 - JavaScript Promise Integrations (JSPI) 
 - Experimental Chrome only feature
+
+</v-clicks>
+
+<v-click>
 
 ```py
 import async
@@ -444,7 +445,7 @@ def sync_update(url):
   resp = run_sync(asyncio.sleep(0))
 ```
 
-</v-clicks>
+</v-click>
 
 ---
 layout: iframe-2-cols
@@ -464,14 +465,18 @@ layout: two-cols-header
 
 <v-clicks>
 
-- Has to be actively turned on
-- Turtle Step by Step
-- Breakpoints can be toggled during execution
-- Inspired by TigerJython debugger / python-tutor.ch
+- Pause the execution
+- Step by step / breakpoints
+- Memory state sent and visualized by the JS frontend
+- Inspired by TigerJython debugger / pythontutor.ch
 
 </v-clicks>
 
 ::right::
+
+<img src="./images/tigerjythondebugger.jpeg" alt="drawing" width="250"/>
+
+TigerJython Debugger
 
 <img src="./images/pythontutor.png" alt="drawing" width="250"/>
 
@@ -529,7 +534,6 @@ Nested Lists
 
 # Outlook
 
-- Educational Database library
 - Bluetooth Robotics
 - Multifile
 - Open Source
