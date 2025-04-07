@@ -35,7 +35,7 @@ layout: two-cols-header
 ::left::
 - Name: Clemens Bachmann
 - Occupation: Software Developer / Educator
-  - Departement of algorithms and **didactics** at ETH
+  - Algorithms and **didactics** group at ETH
 - clemens.bachmann@inf.ethz.ch
 
 ::right::
