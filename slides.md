@@ -22,7 +22,7 @@ css: unocss
 
 # WebTigerPython
 
-## placeholder
+## Placeholder
 
 Author
 
@@ -42,7 +42,6 @@ layout: two-cols-header
   <img src="./images/monalisa.jpg" width=150 class="absolute right-50px top-90px"/>
 </div>
 
-
 ---
 layout: wtp-2-cols
 code: |
@@ -55,7 +54,7 @@ code: |
 
 <v-clicks>
 
-- basic instructions
+- Basic instructions
 
 </v-clicks>
 
@@ -72,7 +71,7 @@ code: |
 device: micro:bit
 ---
 
-# BBC Microbit 🖥️
+# BBC Micro:bit 🖥️
 
 <v-clicks>
 
@@ -84,6 +83,7 @@ device: micro:bit
   - Compass
 
 </v-clicks>
+
 ---
 layout: wtp-2-cols
 code: |
@@ -120,16 +120,17 @@ wtpLayout: '["Editor", "Console"]'
 
 <v-clicks>
 
-- layout can also be specified
+- Layout can also be specified
 - Components
   - Editor
   - Canvas
   - Console
 - Only 1 Canvas
-- Specified in Nested List
+- Specified in nested list
   - e.g. '["Editor", "Console"]'
 
 </v-clicks>
 
+--- 
 
----
+Feel free to let me know if you need any further adjustments!
