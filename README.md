@@ -1,15 +1,64 @@
-# WebTigerPython Slides Template
+# WebTigerPython Slides Template 🐯📊
 
-This is a template to create slide decks with slidev for WebTigerPython. WebTigerPython is embedded as an iframe into the slides.
+## Overview
 
-## Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+This project provides a comprehensive template for creating interactive slide decks using Slidev, specifically designed for WebTigerPython presentations. The template integrates WebTigerPython as an embedded iframe, allowing for dynamic and engaging educational content.
 
-To start the slide show:
+## 🚀 Features
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
+- **Slidev Integration**: Leverage the power of Slidev for modern, markdown-based presentations
+- **WebTigerPython Embedding**: Seamlessly include interactive Python programming environments
+- **Easy Deployment**: One-click GitHub Pages deployment
+- **Responsive Design**: Slides look great on any device
 
-Edit the [slides.md](./slides.md) to see the changes.
+## 🛠 Prerequisites
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+- Node.js (v14+ recommended)
+- npm
+
+## 🏁 Getting Started
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/tiger-jython/wtp-slides-template.git
+
+# Navigate to project directory
+cd wtp-slides-template
+
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+# Start development server
+npm run dev
+
+# Open in browser
+# Visit http://localhost:3030
+```
+
+## 📝 Editing Slides
+
+- Edit `slides.md` to modify slide content
+- Use markdown and Slidev-specific syntax for rich presentations
+- Embed WebTigerPython directly in slides
+
+## 🌐 Deployment
+
+The template is automatically deployed to GitHub Pages:
+👉 https://tiger-jython.github.io/wtp-slides-template
+
+## 📚 Resources
+
+- [Slidev Documentation](https://sli.dev/)
+- [WebTigerPython](https://webtigerpython.ethz.ch/)
+- [WebTigerPython Docs](https://docs.webtigerpython.ethz.ch/)
+- [GitHub Pages](https://pages.github.com/)
+
+---
+
+**Happy Presenting!** 🎉👩‍💻👨‍💻
