@@ -1,6 +1,6 @@
 # WebTigerPython Slides Template
 
-This is a template to create slide decks with slidev for WebTigerPython
+This is a template to create slide decks with slidev for WebTigerPython. WebTigerPython is embedded as an iframe into the slides.
 
 ## Welcome to [Slidev](https://github.com/slidevjs/slidev)!
 
